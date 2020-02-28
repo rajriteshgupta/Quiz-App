@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="none"
+    android:background="@drawable/home_background"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:longClickable="true"
+        android:background="@drawable/edittext2_round"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:longClickable="true"
+        android:background="@drawable/edittext2_round"
+        android:hint="Last Name"
+        android:layout_below="@+id/fname"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext2_round"
+        android:singleLine="true"
+        android:hint="e-Mail"
+        android:inputType="textWebEmailAddress"
+        android:layout_below="@+id/lname"/>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext2_round"
+            android:singleLine="true"
+            android:hint="Age"
+            android:inputType="number"
+            android:layout_below="@+id/email"/>
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:longClickable="true"
+        android:background="@drawable/edittext2_round"
+        android:hint="Contact Number"
+        android:inputType="number"
+        android:layout_below="@+id/age"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:longClickable="true"
+        android:background="@drawable/edittext2_round"
+        android:hint="User Name"
+        android:layout_below="@+id/num"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edittext2_round"
+        android:singleLine="true"
+        android:hint="Password"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/uname"/>
+
+    <EditText
+        android:id="@+id/confirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edittext2_round"
+        android:singleLine="true"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/pass"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/confirmPass">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="agree for "/>
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round"
+        android:padding="15dp"
+        android:layout_below="@id/linearLayout"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:onClick="SignUp"/>
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Click for Sign In"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/signUp"/>
+
+    </RelativeLayout>
+</ScrollView>
